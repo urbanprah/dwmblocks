@@ -1,5 +1,5 @@
 #!/bin/sh
-[ -e $HOME/.local/bin/statusbar/colors ] && . $HOME/.local/bin/statusbar/colors
+. ./colors
 
 time="$(date "+%H:%M")"
 coloredTime="$fg1$r $time$r"

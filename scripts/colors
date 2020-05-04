@@ -1,5 +1,4 @@
 #!/bin/sh
-
 [ -e $HOME/.cache/wal/colors.sh ] && . $HOME/.cache/wal/colors.sh
 
 bgfg="^b$foreground^"

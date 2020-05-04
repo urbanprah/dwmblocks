@@ -17,9 +17,9 @@ typedef struct {
 
 /* configuration */
 static const Block blocks[] = {
-        /* command    interval  signal */
-        { "scripts/dwm_date",     3600, 1      },
-        { "scripts/dwm_time",     60,   2      },
+        /* command        interval  signal */
+        { "dwm_date",     3600,     1      },
+        { "dwm_time",     60,       2      },
 };
 
 static const char* delim = " | ";
