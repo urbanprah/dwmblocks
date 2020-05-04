@@ -1,0 +1,13 @@
+#!/bin/sh
+
+[ -e $HOME/.cache/wal/colors.sh ] && . $HOME/.cache/wal/colors.sh
+
+bgfg="^b$foreground^"
+bg1="^b$color1^"
+bg2="^b$color2^"
+fgfg="^c$foreground^"
+fgbg="^c$background^"
+fg1="^c$color1^"
+fg2="^c$color2^"
+fg3="^c$color3^"
+r="^d^"

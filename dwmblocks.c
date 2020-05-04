@@ -18,25 +18,8 @@ typedef struct {
 /* configuration */
 static const Block blocks[] = {
         /* command    interval  signal */
-        /* { "dwm_mpc",      0,        2      }, */
-        /* { "dwm_battery",  0,    2      }, */
-        /* { "dwm_xkb",      0,    2      }, */
-        /* { "dwm_mail",     0,    2      }, */
-        /* { "dwm_network",  0,    2      }, */
-        /* { "dwm_pulse",    0,    2      }, */
-        /* { "dwm_spotify",  0,    2      }, */
-        /* { "dwm_torrent",  0,    2      }, */
-        /* { "dwm_weather",  0,    2      }, */
-        /* { "dwm_rss",      0,    2      }, */
-        /* { "dwm_podcast",  0,    2      }, */
-        /* { "dwm_trash",    0,    2      }, */
-        /* { "dwm_mount",    0,    2      }, */
-        /* { "dwm_disk",     0,    2      }, */
-        /* { "dwm_bt",       0,    2      }, */
-        /* { "dwm_cpu",      0,    2      }, */
-        /* { "dwm_yay",      0,    2      }, */
-        { "dwm_date",     3600, 1      },
-        { "dwm_time",     60,   2      },
+        { "scripts/dwm_date",     3600, 1      },
+        { "scripts/dwm_time",     60,   2      },
 };
 
 static const char* delim = " | ";

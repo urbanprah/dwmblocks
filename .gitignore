@@ -1,3 +1,4 @@
 *.diff
 dwmblocks
 *.orig
+scripts/bar-functions

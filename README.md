@@ -1,8 +1,8 @@
-dwmblocks 
+dwmblocks
 =========
-Modular status bar for dwm written in c.
+Modular status bar for dwm written in c with a collection of scripts to use it.
 
 ## TODO
 * [ ] write help
 * [ ] make -p, -d work
-* [ ] comply with suckless style guide
+* [ ] adhere to [suckless coding style](https://suckless.org/coding_style/)

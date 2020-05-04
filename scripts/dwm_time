@@ -1,0 +1,14 @@
+#!/bin/sh
+[ -e $HOME/.local/bin/statusbar/colors ] && . $HOME/.local/bin/statusbar/colors
+
+time="$(date "+%H:%M")"
+coloredTime="$fg1$r $time$r"
+
+echo "$coloredTime"
+
+case $BLOCK_BUTTON in
+	1) notify-send "Button1" ;;
+	2) notify-send "Button2" ;;
+	3) notify-send "Button3" ;;
+esac
+
