@@ -1,5 +1,5 @@
 #!/bin/sh
-. ./colors
+. $(dirname "$0")/colors
 
 date="$(date '+%a %d %b')"
 coloredDate="$fg1$r $date$r"
