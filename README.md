@@ -6,6 +6,7 @@ CHANGES
 -------
 * [clickable modules](https://gist.github.com/danbyl/54f7c1d57fc6507242a95b71c3d8fdea) by daniel.bylinka@gmail.com via ```$BLOCK_BUTTON```
 * no icon prefixes
+* Refresh all blocks using ```pkill -RTMIN+0 dwmblocks```
 
 ##### TODO
 * [ ] write help

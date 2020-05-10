@@ -5,3 +5,5 @@ clean:
 install: output
 	mkdir -p /usr/local/bin
 	cp -f dwmblocks /usr/local/bin
+uninstall:
+	# TODO

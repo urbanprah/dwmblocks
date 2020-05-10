@@ -18,8 +18,8 @@ typedef struct {
 /* configuration */
 static const Block blocks[] = {
         /* command        interval  signal */
-        { "dwm_date",     3600,     1      },
-        { "dwm_time",     60,       2      },
+        { "~/.local/src/dwmblocks/scripts/dwm_date",     3600,     1      },
+        { "~/.local/src/dwmblocks/scripts/dwm_time",     60,       2      }
 };
 
 static const char* delim = " | ";
@@ -137,17 +137,16 @@ getcmds(int time)
 void
 getsigcmds(int signal)
 {
-    const Block *current;
-    for (int i = 0; i < LENGTH(blocks); i++)
-    {
-        current = blocks + i;
-        if (current->signal == signal) {
-            getcmd(current,statusbar[i]);
+        const Block *current;
+        for (int i = 0; i < LENGTH(blocks); i++) {
+                current = blocks + i;
+                if (signal == 0 || current->signal == signal) {
+                        getcmd(current, statusbar[i]);
+                }
         }
-    }
 }
 
-void
+        void
 setupsignals()
 {
     struct sigaction sa;
@@ -159,10 +158,11 @@ setupsignals()
             sigaddset(&sa.sa_mask, SIGRTMIN+blocks[i].signal);
         }
     }
+    signal(SIGRTMIN+0, sighandler);
+    sigaddset(&sa.sa_mask, SIGRTMIN+0);
     sa.sa_sigaction = buttonhandler;
     sa.sa_flags = SA_SIGINFO;
     sigaction(SIGUSR1, &sa, NULL);
-
 }
 #endif
 
